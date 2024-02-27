@@ -1,0 +1,160 @@
+*{
+	margin:0;
+    padding:0;
+    border:0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	position:relative;
+	min-height:100vh;
+}
+
+section{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+header{
+	background-color:#661923;
+	width:100%;
+	color:white;
+}
+nav{
+	display:flex;
+	align-items:center;
+	margin-left:3%;
+	padding:0.5%;	
+}
+#flagContainer{
+	display:flex;
+	justify-content:flex-end;
+	width:85%;
+	margin-right:5%;
+}
+#italianFlag{
+	width:50px;
+	height:26px;
+}
+
+main{
+	display:flex;
+	margin-top:50px;
+	justify-content:center;
+	align-items:center;
+	padding:2.5%;
+	background-color:#bd6a72;
+	color:white;
+	flex:1;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+#sobreImg{
+	margin-left:5%;
+}
+
+#sobreTexto{
+	text-align:justify;
+}
+
+#cardapioDiv{
+	display:flex;
+	margin-top:50px;
+	justify-content:center;
+	align-items:center;
+	margin:2%;
+}
+
+#openingHoursDiv{
+	margin-bottom:5%;
+	margin-top:5%;
+}
+#openingHoursTable{
+	width:100%;
+	border-collapse: separate; 
+	border-spacing: 25px;
+}
+
+#imgCardapio{	
+	width:400px;
+	height:400px;
+	margin-left:2%;
+	object-fit:contain;
+}
+
+.menuTable{
+	text-align:justify;
+}
+
+#cardapioTable{
+	border-style:solid;
+	border-width:1.5px;
+	border-color:#dedede;
+	border-radius:7px;
+	padding:5px;
+}
+#openingHoursTable td{
+	padding:2%;
+	border-radius:5px;
+}
+#cardapio h1{
+	background-color:#f5dcdf;
+	padding:2.5%;
+	width:auto;
+	border-radius:7px;
+}
+
+#cardapio td{
+	border-radius:5px;
+	padding:10px;
+}
+
+footer{
+	display:grid;
+	width:100%;
+	grid-template-columns:repeat(3,1fr);
+	align-items:center;
+	justify-content:center;
+	color:white;
+	background-color:#80222c;
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+
+footer div{
+	padding:1%;
+}
+
+#whatsBtn{
+	border:none;
+	background:none;
+}
+
+@media (max-width: 1300px){
+	#cardapio{
+		text-align:center;
+	}
+	#imgCardapio{
+		display:none;
+	}
+}
+@media (max-width: 800px){
+	main{
+		flex-direction:column;
+	}
+	#sobreImg{
+		margin-top:2%;
+		margin-left:0;
+		width:auto;
+	}
+}
